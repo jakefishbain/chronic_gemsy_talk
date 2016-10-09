@@ -1,5 +1,23 @@
-<h1>Entered Times</h1>
-<%= render new_chron_path %>
-<ul>
-  <%= render @all_chrons %>
-</ul>
+<div class='body-div'>
+  <h3>Entered Times</h3>
+  <%= render new_chron_path %> <br>
+
+ <!-- Modal Trigger -->
+  <a class="modal-trigger waves-effect waves-light btn-flat" href="#modal1">Chronic Git Hub</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+        <iframe src="https://www.evernote.com/shard/s4/sh/73c829e2-64c3-4e2e-bb4a-6ff8fb2cc732/048c416987fcc037e4f5dccf76c3bdc8.html" width="1110" height="500">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+    </div>
+  </div>
+
+  <ul>
+    <%= render @all_chrons %>
+  </ul>
+</div>

@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+.modal { 
+  width: 85% !important; 
+  max-height: 85% !important; 
+}
+
+.body-div {
+  width: 80%;
+  margin: auto;
+  border: solid black 2px;
+  border-radius: 25px;
+  padding: 5%;
+}
+
+.label {
+  color: blue;
+  display: inline;
+}
+
+.label2 {
+  color: red;
+  display: inline;
+}
