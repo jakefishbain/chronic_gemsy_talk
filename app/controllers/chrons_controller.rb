@@ -1,7 +1,7 @@
 class ChronsController < ApplicationController
 
   def index
-    @all_chrons = Chron.all
+    @all_chrons = Chron.order('created_at desc')
     @chron = Chron.new
   end
 
