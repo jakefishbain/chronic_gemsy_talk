@@ -1,9 +1,11 @@
 <div class='body-div'>
   <h3>Entered Times</h3>
   <%= render new_chron_path %> <br>
+  
+  <a class="btn" onclick="Materialize.toast('<%= Chron.option %>', 4000)">Toast!</a><br><br>
 
  <!-- Modal Trigger -->
-  <a class="modal-trigger waves-effect waves-light btn-flat" href="#modal1">Chronic Git Hub</a>
+  <a class="modal-trigger waves-effect waves-light btn-flat" href="#modal1">Chronic Git Hub</a> <br>
 
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
