@@ -36,3 +36,7 @@
   color: red;
   display: inline;
 }
+
+.center {
+  margin: auto;
+}

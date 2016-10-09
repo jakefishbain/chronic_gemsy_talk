@@ -11,8 +11,15 @@ class ChronsController < ApplicationController
 
   def create
     # binding.pry
-    @chron = Chron.create!(chron_params.merge(form_params: params[:chron][:chronic_time]))
-    redirect_to chrons_path
+    @chron = Chron.new(chron_params.merge(form_params: params[:chron][:chronic_time]))
+    if @chron.save
+      redirect_to chrons_path
+    else 
+      redirect_to error_path
+    end
+  end
+
+  def error
   end
 
   private
