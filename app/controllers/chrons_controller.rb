@@ -3,6 +3,7 @@ class ChronsController < ApplicationController
   def index
     @all_chrons = Chron.order('created_at desc limit 1')
     @chron = Chron.new
+    @time = Time.now.strftime("%H:%M:%S ")
   end
 
   def new

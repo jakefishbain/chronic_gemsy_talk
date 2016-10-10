@@ -5,7 +5,13 @@
   
 
     // Materialize.toast(message, displayLength, className, completeCallback);
-  Materialize.toast('', 4000) // 4000 is the duration of the toast
+  Materialize.toast('', 4000); // 4000 is the duration of the toast
 
+
+  setInterval(function () {
+
+        $('.time-rect-container').load('/dashboard/give_time');
+
+    }, 1000);
 
   });
